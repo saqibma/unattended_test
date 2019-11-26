@@ -88,13 +88,6 @@ abstract class BaseSuite extends FunSuite with BeforeAndAfterAll with GivenWhenT
       }
     }
 
-  protected def deleteRecursively(file: File): Unit = {
-    if (file.isDirectory)
-      file.listFiles.foreach(deleteRecursively)
-    if (file.exists && !file.delete)
-      throw new Exception(s"Unable to delete ${file.getAbsolutePath}")
-  }
-
   private final def getResourceFile(file: String): File =
     new File(getClass.getClassLoader.getResource(file).getFile)
 
