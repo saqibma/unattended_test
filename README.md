@@ -8,7 +8,7 @@ Please go through the following points before running the application.
 5) F1DataAnalyzer performs extraction, transformation and load activities.
    Please refer F1DataAnalyzer.scala file.
 6) F1DataAnalyzer extract method parses and extracts F1 driver name and its lap time.
-7) F1DataAnalyzer transform method performs all the transformations asked in the exercise and calculate the average lap time for each driver and sort them ascending order   
+7) F1DataAnalyzer transform method performs all the transformations asked in the exercise and calculate the average lap time for each driver and sort them in ascending order   
 8) FileDataAnalyzer load method saves transformed dataframes as csv files(without header) under the output
    folder specified as an argument to the main program.
 9) Integration testing was done in a BDD style for each transformations asked in the exercise.
