@@ -10,7 +10,6 @@ import org.apache.spark.sql.types.{StringType, StructField, StructType}
 import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 import org.scalatest.{BeforeAndAfterAll, FunSuite, GivenWhenThen}
 
-
 abstract class BaseSuite extends FunSuite with BeforeAndAfterAll with GivenWhenThen {
   @transient protected var _spark: SparkSession = _
   protected def spark: SparkSession = _spark
